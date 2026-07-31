@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مطعم أبو وديع | مشويات فاخرة</title>
+    <meta name="description" content="مطعم أبو وديع - نقدم أشهى المأكولات والمشويات الفاخرة بالنكهة الأصيلة والجودة العالية في الكويت.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo" id="navLogo">أبو <span>وديع</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#about">قصتنا</a></li>
+                <li><a href="#menu">قائمة الطعام</a></li>
+                <li><a href="#branches">فروعنا</a></li>
+                <li><a href="#contact">اتصل بنا</a></li>
+            </ul>
+            <div class="nav-actions">
+                <div class="cart-icon" id="cartIcon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </div>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-slideshow">
+            <div class="slide active" style="background-image: url('images/rooftop.jpg');"></div>
+            <div class="slide" style="background-image: url('images/about.jpg');"></div>
+            <div class="slide" style="background-image: url('images/outdoor_red.jpg');"></div>
+            <div class="slide" style="background-image: url('images/indoor2.jpg');"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title fade-up" id="heroTitle">أبو وديع</h1>
+            <p class="hero-subtitle fade-up delay-1">مطعم مشويات فاخر</p>
+            <p class="hero-slogan fade-up delay-2">نقدم أشهى المشويات الفاخرة بالنكهة الأصيلة والجودة الاستثنائية.</p>
+            <div class="hero-buttons fade-up delay-3">
+                <a href="#menu" class="btn btn-primary">عرض المنيو</a>
+                <a href="#" class="btn btn-outline" id="heroOrderBtn">اطلب الآن</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container about-container">
+            <div class="about-image reveal-left">
+                <img src="images/about.jpg" alt="داخل المطعم">
+            </div>
+            <div class="about-text reveal-right">
+                <h2 class="section-title">قصتنا</h2>
+                <p id="aboutDescription">مرحباً بكم في مطعم أبو وديع، أحد أرقى مطاعم المشويات في الكويت. نحن ملتزمون بتقديم تجربة طعام لا تُنسى، وتتميز أطباقنا بالمكونات الطازجة، والوصفات الأصيلة، والخدمة الممتازة. من خلال فروعنا المتعددة في الكويت، ننقل لكم أعرق نكهات التقاليد والرفاهية مباشرة إلى طاولتكم.</p>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <i class="fas fa-leaf"></i>
+                        <span>مكونات طازجة</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-fire-burner"></i>
+                        <span>طهاة خبراء</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-motorcycle"></i>
+                        <span>توصيل سريع</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-star"></i>
+                        <span>جودة فاخرة</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu section dark-bg">
+        <div class="container">
+            <h2 class="section-title text-center">استكشف قائمتنا</h2>
+            
+            <!-- Menu Categories Tab            <!-- Menu Grid -->
+            <div class="menu-grid">
+                <!-- Item 1 -->
+                <div class="menu-card reveal-up" data-category="kebab" data-ingredients="أسياخ لحم كباب مفروم ناعم متبل، حواوشي مشوي مقرمش، سجق مشوي، خبز بلدي ساخن، طحينة وسلطة" data-old-price="2.50">
+                    <div class="card-img">
+                        <img src="images/grills_platter.jpg" alt="كباب أصلي">
+                        <div class="info-overlay"><i class="fas fa-info-circle"></i></div>
+                        <div class="price"><span class="old-price">2.50 KD</span> 2.00 KD</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>كباب أصلي</h3>
+                        <p>لحم بلدي مفروم ناعم ومتبل بالأعشاب والبهارات الطازجة، مشوي على الفحم بمهارة مع الحواوشي والسجق.</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-id="1" data-name="كباب أصلي" data-price="2.00">أضف إلى السلة</button>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="menu-card reveal-up delay-1" data-category="mixed" data-ingredients="كباب لحم، شيش طاووق، كفتة متبلة، قطع دجاج مشوية، خضار مشوية، ثومية، طحينة، خبز طازج" data-old-price="4.25">
+                    <div class="card-img">
+                        <img src="images/platter_mix.jpg" alt="مشويات مشكلة">
+                        <div class="info-overlay"><i class="fas fa-info-circle"></i></div>
+                        <div class="price"><span class="old-price">4.25 KD</span> 3.50 KD</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>مشويات مشكلة عائلية</h3>
+                        <p>تشكيلة فاخرة من الكباب، الكفتة، والشيش طاووق تقدم مع الخضار المشوية والأرز.</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-id="2" data-name="مشويات مشكلة عائلية" data-price="3.50">أضف إلى السلة</button>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="menu-card reveal-up delay-2" data-category="kebab" data-ingredients="ريش لحم ضأن بلدي متبل بالأعشاب والبهارات الشرقية، طماطم وفلفل مشوي، يقدم مع خبز طازج وطحينة" data-old-price="5.50">
+                    <div class="card-img">
+                        <img src="images/lamb_chops.jpg" alt="ريش ضأن مشوية فاخرة">
+                        <div class="info-overlay"><i class="fas fa-info-circle"></i></div>
+                        <div class="price"><span class="old-price">5.50 KD</span> 4.50 KD</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>ريش ضأن مشوية فاخرة</h3>
+                        <p>قطع ريش الضأن البلدي الفاخرة المشوية بدقة على لهب الفحم الحار لتقديم نكهة أصلية مميزة.</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-id="3" data-name="ريش ضأن مشوية فاخرة" data-price="4.50">أضف إلى السلة</button>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="menu-card reveal-up" data-category="meals" data-ingredients="قطع لحم ستيك ريب آي فاخر، متبل بالأعشاب الطازجة وزيت الزيتون، مشوي على لهب الفحم الحار مع البطاطس" data-old-price="6.00">
+                    <div class="card-img">
+                        <img src="images/grilled_steak.jpg" alt="ستيك ريب آي على الفحم">
+                        <div class="info-overlay"><i class="fas fa-info-circle"></i></div>
+                        <div class="price"><span class="old-price">6.00 KD</span> 5.00 KD</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>ستيك ريب آي على الفحم</h3>
+                        <p>شريحة ستيك ريب آي غنية بالعصارة مشوية على نار هادئة ومتبلة بالأعشاب والروزماري.</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-id="4" data-name="ستيك ريب آي على الفحم" data-price="5.00">أضف إلى السلة</button>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="menu-card reveal-up delay-1" data-category="chicken" data-ingredients="نصف دجاجة طازجة مشوية ببطء على الفحم، تقدم مع خضار مشوية وشرائح الليمون الحامض والبرتقال والأعشاب" data-old-price="3.25">
+                    <div class="card-img">
+                        <img src="images/grilled_chicken_stone.jpg" alt="نصف دجاجة مشوية على الفحم">
+                        <div class="info-overlay"><i class="fas fa-info-circle"></i></div>
+                        <div class="price"><span class="old-price">3.25 KD</span> 2.50 KD</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>نصف دجاجة مشوية على الفحم</h3>
+                        <p>نصف دجاجة مشوية على لهب الفحم تقدم مع الليمون والبرتقال المشوي والأعشاب البرية.</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-id="5" data-name="نصف دجاجة مشوية على الفحم" data-price="2.50">أضف إلى السلة</button>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="menu-card reveal-up delay-2" data-category="drinks" data-ingredients="حليب طازج، كريمة مخفوقة غنية، صلصة شوكولاتة فاخرة، حبيبات شوكولاتة داكنة" data-old-price="1.50">
+                    <div class="card-img">
+                        <img src="images/milkshake.jpg" alt="شوكليت ميلك شيك">
+                        <div class="info-overlay"><i class="fas fa-info-circle"></i></div>
+                        <div class="price"><span class="old-price">1.50 KD</span> 1.25 KD</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>شوكليت ميلك شيك فاخر</h3>
+                        <p>ميلك شيك شوكولاتة غني ومغطى بالكريمة المخفوقة وصلصة الشوكولاتة اللذيذة.</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-id="6" data-name="شوكليت ميلك شيك فاخر" data-price="1.25">أضف إلى السلة</button>
+                    </div>
+                </div>
+
+                <!-- Item 7 (Meals) -->
+                <div class="menu-card reveal-up" data-category="meals" data-ingredients="بط مشوي، نصف دجاجة، كباب، سجق بلدي، أرز الكبسة العائلي المبهر، مكسرات، يقدم مع مرق ودقوس وسلطات" data-old-price="10.00">
+                    <div class="card-img">
+                        <img src="images/feast_generosity.jpg" alt="وجبة ديوانية الكرم الفاخرة">
+                        <div class="info-overlay"><i class="fas fa-info-circle"></i></div>
+                        <div class="price"><span class="old-price">10.00 KD</span> 8.50 KD</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>وجبة ديوانية الكرم الفاخرة</h3>
+                        <p>وليمة متكاملة تشمل بط مشوي ونصف دجاجة وكباب وسجق بلدي على أرز الكبسة العائلي.</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-id="7" data-name="وجبة ديوانية الكرم الفاخرة" data-price="8.50">أضف إلى السلة</button>
+                    </div>
+                </div>
+
+                <!-- Item 8 (Meals) -->
+                <div class="menu-card reveal-up delay-1" data-category="meals" data-ingredients="ورق عنب محشي بالخلطة، سمبوسة مقرمشة، كباب لحم، سجق بلدي، رقاق باللحمة المفرومة، يقدم مع ليمون وسلطات" data-old-price="5.50">
+                    <div class="card-img">
+                        <img src="images/platter_appetizers.jpg" alt="صينية مقبلات ومحاشي مشكلة">
+                        <div class="info-overlay"><i class="fas fa-info-circle"></i></div>
+                        <div class="price"><span class="old-price">5.50 KD</span> 4.50 KD</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>صينية مقبلات ومحاشي مشكلة</h3>
+                        <p>تشكيلة رائعة من ورق العنب والسمبوسة المقرمشة مع كباب اللحم والسجق البلدي والرقاق.</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-id="8" data-name="صينية مقبلات ومحاشي مشكلة" data-price="4.50">أضف إلى السلة</button>
+                    </div>
+                </div>
+
+                <!-- Item 9 (Drinks) -->
+                <div class="menu-card reveal-up" data-category="drinks" data-ingredients="فراولة طازجة، زبدة الفول السوداني، كريمة مخفوقة، قطع شوكولاتة، حليب اللوز" data-old-price="1.80">
+                    <div class="card-img">
+                        <img src="images/smoothie.jpg" alt="سموذي الفراولة والشوكولاتة">
+                        <div class="info-overlay"><i class="fas fa-info-circle"></i></div>
+                        <div class="price"><span class="old-price">1.80 KD</span> 1.50 KD</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>سموذي الفراولة والشوكولاتة</h3>
+                        <p>مزيج غني من الفراولة الطازجة مع كريمة الفول السوداني والشوكولاتة اللذيذة.</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-id="9" data-name="سموذي الفراولة والشوكولاتة" data-price="1.50">أضف إلى السلة</button>
+                    </div>
+                </div>
+
+                <!-- Item 10 (Drinks) -->
+                <div class="menu-card reveal-up delay-1" data-category="drinks" data-ingredients="أكواب موس الشوكولاتة، كريمة الفانيليا، بسكويت الشوكولاتة المقرمش، قهوة اسبريسو" data-old-price="2.00">
+                    <div class="card-img">
+                        <img src="images/desserts.jpg" alt="أكواب حلى أبو وديع الفاخرة">
+                        <div class="info-overlay"><i class="fas fa-info-circle"></i></div>
+                        <div class="price"><span class="old-price">2.00 KD</span> 1.75 KD</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>أكواب حلى أبو وديع الفاخرة</h3>
+                        <p>تشكيلة راقية من أكواب الموس والكريمة الغنية تقدم باردة مع الإسبريسو.</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-id="10" data-name="أكواب حلى أبو وديع الفاخرة" data-price="1.75">أضف إلى السلة</button>
+                    </div>
+                </div>
+            </div>�ة" data-price="4.50">أضف إلى السلة</button>
+                    </div>
+                </div>
+
+                <!-- Item 9 (Drinks) -->
+                <div class="menu-card reveal-up" data-category="drinks" data-ingredients="فراولة طازجة، زبدة الفول السوداني، كريمة مخفوقة، قطع شوكولاتة، حليب اللوز" data-old-price="1.80">
+                    <div class="card-img">
+                        <img src="images/smoothie.jpg" alt="سموذي الفراولة والشوكولاتة">
+                        <div class="info-overlay"><i class="fas fa-info-circle"></i></div>
+                        <div class="price"><span class="old-price">1.80 KD</span> 1.50 KD</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>سموذي الفراولة والشوكولاتة</h3>
+                        <p>مزيج غني من الفراولة الطازجة مع كريمة الفول السوداني والشوكولاتة اللذيذة.</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-id="9" data-name="سموذي الفراولة والشوكولاتة" data-price="1.50">أضف إلى السلة</button>
+                    </div>
+                </div>
+
+                <!-- Item 10 (Drinks) -->
+                <div class="menu-card reveal-up delay-1" data-category="drinks" data-ingredients="أكواب موس الشوكولاتة، كريمة الفانيليا، بسكويت الشوكولاتة المقرمش، قهوة اسبريسو" data-old-price="2.00">
+                    <div class="card-img">
+                        <img src="images/desserts.jpg" alt="أكواب حلى أبو وديع الفاخرة">
+                        <div class="info-overlay"><i class="fas fa-info-circle"></i></div>
+                        <div class="price"><span class="old-price">2.00 KD</span> 1.75 KD</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>أكواب حلى أبو وديع الفاخرة</h3>
+                        <p>تشكيلة راقية من أكواب الموس والكريمة الغنية تقدم باردة مع الإسبريسو.</p>
+                        <button class="btn btn-primary add-to-cart-btn" data-id="10" data-name="أكواب حلى أبو وديع الفاخرة" data-price="1.75">أضف إلى السلة</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Branches Section -->
+    <section id="branches" class="branches section">
+        <div class="container">
+            <h2 class="section-title text-center">فروعنا</h2>
+            <div class="branches-grid" id="branchesGrid">
+                <!-- Generated dynamically from RESTAURANT.branches -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials section dark-bg">
+        <div class="container">
+            <h2 class="section-title text-center">ماذا يقول عملاؤنا</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card reveal-up">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"أفضل كباب تناولته في الكويت. اللحم طري للغاية ومليء بالنكهة، والخدمة سريعة بشكل استثنائي!"</p>
+                    <div class="customer-info">
+                        <h4>أحمد ك.</h4>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal-up delay-1">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p>"أجواء عائلية رائعة. طبق المشويات المشكلة كان ضخماً ويستحق السعر تماماً. سأعود بالتأكيد."</p>
+                    <div class="customer-info">
+                        <h4>سارة م.</h4>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal-up delay-2">
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>"جودة فاخرة بكل معنى الكلمة. يمكنك تذوق طزاجة المكونات. أنصح به بشدة!"</p>
+                    <div class="customer-info">
+                        <h4>فيصل أ.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container contact-container">
+            <div class="contact-info reveal-left">
+                <h2 class="section-title">تواصل معنا</h2>
+                <p>لديك استفسار أو ترغب في تقديم طلب كبير؟ تواصل معنا مباشرة!</p>
+                
+                <div class="info-item">
+                    <div class="icon"><i class="fas fa-phone-alt"></i></div>
+                    <div>
+                        <h4>اتصل بنا</h4>
+                        <p id="contactPhone">+965 1234 5678</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="icon"><i class="fab fa-whatsapp"></i></div>
+                    <div>
+                        <h4>واتساب</h4>
+                        <p id="contactWhatsApp">+965 1234 5678</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="icon"><i class="fas fa-envelope"></i></div>
+                    <div>
+                        <h4>البريد الإلكتروني</h4>
+                        <p id="contactEmail">contact@abouwadee.com</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="icon"><i class="fas fa-map"></i></div>
+                    <div>
+                        <h4>المكتب الرئيسي</h4>
+                        <p id="contactAddress">مدينة الكويت، الكويت</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form reveal-right">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="الاسم بالكامل" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="البريد الإلكتروني" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="رقم الهاتف" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="رسالتك" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">إرسال الرسالة</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3 id="footerLogo">أبو <span>وديع</span></h3>
+                <p id="footerSlogan">مطعم مشويات فاخر في الكويت</p>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <div class="footer-bottom">
+                <p id="footerCopyright">&copy; 2026 مطعم أبو وديع. جميع الحقوق محفوظة.</p>
+                <a href="#home" class="scroll-top"><i class="fas fa-chevron-up"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h2>سلتك</h2>
+            <button class="close-cart" id="closeCart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <div class="empty-cart-msg">سلتك فارغة حالياً.</div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total" style="font-size: 1.1rem; margin-bottom: 5px;">
+                <span>المجموع الفرعي:</span>
+                <span id="cartSubtotalAmount">0.00 KD</span>
+            </div>
+            <div class="cart-total" style="font-size: 0.95rem; margin-bottom: 10px; opacity: 0.8; font-weight: normal;">
+                <span>رسوم التوصيل:</span>
+                <span id="cartDeliveryFee">0.00 KD</span>
+            </div>
+            <div class="cart-total" style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 10px; font-size: 1.25rem; font-weight: 700;">
+                <span>المجموع الكلي:</span>
+                <span id="cartTotalAmount">0.00 KD</span>
+            </div>
+            <button class="btn btn-primary w-100" id="checkoutBtn">إتمـام الطلب عبر واتساب</button>
+        </div>
+    </div>
+
+    <!-- Meal Details Modal -->
+    <div class="meal-modal-overlay" id="mealModalOverlay"></div>
+    <div class="meal-modal" id="mealModal">
+        <button class="close-modal" id="closeMealModal"><i class="fas fa-times"></i></button>
+        <div class="meal-modal-body">
+            <img id="modalImg" src="" alt="">
+            <h3 id="modalTitle">اسم الوجبة</h3>
+            <p id="modalDesc">وصف الوجبة</p>
+            <div class="ingredients-list">
+                <h4>المكونات</h4>
+                <p id="modalIngredients"></p>
+            </div>
+            <div class="modal-footer">
+                <span class="price" id="modalPrice">0.00 KD</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="checkout-modal-overlay" id="checkoutModalOverlay"></div>
+    <div class="checkout-modal" id="checkoutModal">
+        <button class="close-checkout-modal" id="closeCheckoutModal" aria-label="إغلاق"><i class="fas fa-times"></i></button>
+        <div class="checkout-modal-body">
+            <h3>بيانات الطلب</h3>
+            <p>يرجى إدخال بياناتك لتأكيد الطلب وإرساله مباشرة عبر واتساب.</p>
+            <form id="checkoutForm">
+                <div class="form-group">
+                    <label for="checkoutName">الاسم بالكامل <span class="required">*</span></label>
+                    <input type="text" id="checkoutName" placeholder="مثال: أحمد محمد" required>
+                    <span class="error-msg" id="nameError">الاسم مطلوب</span>
+                </div>
+                <div class="form-group">
+                    <label for="checkoutPhone">رقم الهاتف <span class="required">*</span></label>
+                    <input type="tel" id="checkoutPhone" placeholder="مثال: 99999999" required>
+                    <span class="error-msg" id="phoneError">رقم الهاتف مطلوب</span>
+                </div>
+                <div class="form-group">
+                    <label for="checkoutMethod">طريقة الاستلام <span class="required">*</span></label>
+                    <select id="checkoutMethod" required>
+                        <option value="توصيل">توصيل للمنزل</option>
+                        <option value="استلام من الفرع">استلام من الفرع</option>
+                    </select>
+                </div>
+                <div class="form-group" id="addressGroup">
+                    <label for="checkoutAddress">العنوان بالكامل <span class="required">*</span></label>
+                    <input type="text" id="checkoutAddress" placeholder="المنطقة، القطعة، الشارع، المنزل" required>
+                    <span class="error-msg" id="addressError">العنوان مطلوب للتوصيل</span>
+                </div>
+                <div class="form-group">
+                    <label for="checkoutBranch">الفرع المفضل <span class="required">*</span></label>
+                    <select id="checkoutBranch" required>
+                        <!-- Dynamic Options loaded in JS -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="checkoutNotes">ملاحظات إضافية</label>
+                    <textarea id="checkoutNotes" placeholder="أي ملاحظات خاصة بطلبك..." rows="2"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100" id="submitCheckoutBtn">تأكيد الطلب</button>
+            </form>
+            <div class="loading-animation" id="checkoutLoading">
+                <div class="spinner"></div>
+                <p>جاري تحضير طلبك وتحويلك إلى واتساب...</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Floating WhatsApp Button -->
+    <a href="#" class="whatsapp-float" id="floatingWhatsAppBtn" target="_blank" rel="noopener noreferrer" aria-label="تواصل عبر واتساب">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">تواصل معنا واتساب</span>
+    </a>
+
+    <!-- Floating Call Button -->
+    <a href="#" class="call-float" id="floatingCallBtn" aria-label="اتصل بنا">
+        <i class="fas fa-phone-alt"></i>
+        <span class="call-tooltip">اتصل بنا الآن</span>
+    </a>
+
+    <!-- JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
